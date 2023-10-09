@@ -11,7 +11,7 @@ $title = "New lead from Nad Al Sheba for Evernest Premium Properties.";
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "farhana4_enredb";
+$dbname = "farhana4_enredb"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

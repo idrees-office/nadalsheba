@@ -77,7 +77,7 @@
                                 <h6>
                                     <a href="#">
                                         3 Rooms Manhattan
-                                    </a>
+                                    </a>   
                                 </h6>
                                 <span class="mini-cart-quantity">
                                     1 x $85.00
