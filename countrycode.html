@@ -1,0 +1,27 @@
+<form id="phoneForm">
+  <label for="phoneNumber">Phone Number (with Country Code):</label>
+  <input type="text" id="phoneNumber" name="phoneNumber">
+  <span id="phoneError" style="color: red;"></span>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#phoneForm").submit(function(e) {
+    e.preventDefault();
+  
+    var phoneNumber = $("#phoneNumber").val();
+    var phoneRegex = /^\+\d{1,3}\d{6,14}$/;
+
+    if (phoneRegex.test(phoneNumber)) {
+      $("#phoneError").text("");
+      alert("Phone number is valid!");
+
+    } else {
+
+      $("#phoneError").text("Invalid phone number format. Please enter a valid phone number with a country code (e.g., +1234567890).");
+    }
+  });
+});
+</script>
